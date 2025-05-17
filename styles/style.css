@@ -15,11 +15,12 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -57,12 +58,11 @@ ol {
   align-items: end;
   gap: 30px;
   margin: 0 30px;
-  height: 534px;
-  padding: 133px;
 }
 
 .button {
   background-color: transparent;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 100%;
@@ -140,7 +140,7 @@ ol {
   height: 27px;
   appearance: none;
   font-size: 18px;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   line-height: 100%;
   color: #fff;
@@ -154,14 +154,15 @@ ol {
   outline: none;
 }
 
-.search-form__label-text:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 .search-form__label {
   display: flex;
   width: fit-content;
+  align-items: center;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -188,7 +189,7 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -215,11 +216,11 @@ ol {
 }
 
 .title {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   font-weight: bold;
   font-size: 75px;
   text-transform: uppercase;
-  line-height: 70px;
+  line-height: 0.94;
 }
 
 .content__accent {
@@ -264,13 +265,12 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link_current:active {
+.content__card-link_current {
   background-color: #545050;
 }
 
 .content__card-link:hover {
   text-decoration: underline solid 1px #fff;
-  text-underline-offset: 2px;
 }
 
 .content__card-link:focus {
@@ -293,7 +293,7 @@ ol {
 
 .content__video-card-title {
   color: #fff;
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
