@@ -143,8 +143,7 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   line-height: 100%;
-  color: #fff;
-  opacity: 0.7;
+  color: rgba(255 255 255 / 0.7); ;
   background-color: transparent;
   border: 1px solid #fff;
   border-width: 1px 0;
@@ -158,11 +157,11 @@ ol {
   display: flex;
   width: fit-content;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
